@@ -42,4 +42,5 @@ Using the hkey obfuscation
     # /usr/local/pgsql/bin/psql -d <db> -U <user> < hkey.sql
 
 Then alter "v_use_hkey := false" to "v_use_hkey := true" in both the
-decrypt_replicated_users and encrypt_replicated_users functions.
+decrypt_replicated_users and encrypt_replicated_users functions. 
+Note the pgcrypto contrib module is required for this.
